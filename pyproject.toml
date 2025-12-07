@@ -14,7 +14,10 @@ dependencies = [
     "opencv-python>=4.11.0.86",
     "pandas>=2.3.3",
     "rrcf>=0.4.4",
+    "scikeras[tensorflow]>=0.13.0",
     "scikit-learn>=1.7.2",
     "seaborn>=0.13.2",
+    "shap>=0.49.1",
     "tensorflow[and-cuda]>=2.20.0",
+    "xgboost>=3.1.2",
 ]
