@@ -38,6 +38,7 @@ dependencies = [
     { name = "jupyter" },
     { name = "kagglehub", extra = ["pandas-datasets"] },
     { name = "keras" },
+    { name = "lime" },
     { name = "matplotlib" },
     { name = "numpy" },
     { name = "opencv-python" },
@@ -61,6 +62,7 @@ requires-dist = [
     { name = "jupyter", specifier = ">=1.1.1" },
     { name = "kagglehub", extras = ["pandas-datasets"], specifier = ">=0.3.13" },
     { name = "keras", specifier = ">=3.12.0" },
+    { name = "lime", specifier = ">=0.2.0.1" },
     { name = "matplotlib", specifier = ">=3.10.7" },
     { name = "numpy", specifier = "<2" },
     { name = "opencv-python", specifier = ">=4.11.0.86" },
@@ -1605,6 +1607,21 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/0b/2d/3f480b1e1d31eb3d6de5e3ef641954e5c67430d5ac93b7fa7e07589576c7/libclang-18.1.1-py2.py3-none-win_amd64.whl", hash = "sha256:4dd2d3b82fab35e2bf9ca717d7b63ac990a3519c7e312f19fa8e86dcc712f7fb", size = 26415083, upload-time = "2024-03-17T16:42:21.703Z" },
     { url = "https://files.pythonhosted.org/packages/71/cf/e01dc4cc79779cd82d77888a88ae2fa424d93b445ad4f6c02bfc18335b70/libclang-18.1.1-py2.py3-none-win_arm64.whl", hash = "sha256:3f0e1f49f04d3cd198985fea0511576b0aee16f9ff0e0f0cad7f9c57ec3c20e8", size = 22361112, upload-time = "2024-03-17T16:42:59.565Z" },
 ]
+
+[[package]]
+name = "lime"
+version = "0.2.0.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "matplotlib" },
+    { name = "numpy" },
+    { name = "scikit-image" },
+    { name = "scikit-learn" },
+    { name = "scipy", version = "1.15.3", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.11'" },
+    { name = "scipy", version = "1.16.3", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.11'" },
+    { name = "tqdm" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/f5/86/91a13127d83d793ecb50eb75e716f76e6eda809b6803c5a4ff462339789e/lime-0.2.0.1.tar.gz", hash = "sha256:76960e4f055feb53e89b5022383bafc87b63f25bac6265984b0a333d1a57f781", size = 275719, upload-time = "2020-06-26T21:38:15.46Z" }
 
 [[package]]
 name = "llvmlite"
